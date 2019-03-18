@@ -2,9 +2,9 @@
 #define _DESCRIPT_H
 
 
-extern bit NoData ;
-extern bit Error  ;
-extern bit ispendflag ;
+extern bit NoData;
+extern bit Error;
+extern bit ispendflag;
 extern UINT8 IDLE_TIME;
 extern UINT8 NewAddress;
 extern UINT8 code dev_desc[];

@@ -76,7 +76,7 @@ void isp_patch()
     reg_usb_Index   = 0x00; 
     // isoupdate  softcon  hsenab hsmode  rst resume suspendmode  enablesuspendM
     NewAddress = 0xFF;
-//    IDLE_TIME = 0;    
+    //IDLE_TIME = 0;    
     NoData = 0;
     Error = 0;
     ispendflag = 0;
@@ -85,31 +85,31 @@ void isp_patch()
     {
         intr_usb = reg_usb_IntrUSB;
         intr_in = reg_usb_IntrIn;
-//        intr_out = reg_usb_IntrOut;
-        if(intr_usb & 0x04)          //reset    bit2
+        //intr_out = reg_usb_IntrOut;
+        if(intr_usb & 0x04)                 //reset    bit2
         {
-            while(reg_usb_BusRest);              //USB RESET 
+            while(reg_usb_BusRest);         //USB RESET 
             reg_EP0_SevOutPktRdy = 1;       //Set 1 use to clear  OutPktRdy //3.flush all ep fifo
         }       
-        if (intr_in & 0x01)          //ep0   bit0
+        if (intr_in & 0x01)                 //ep0   bit0
         {
-            int_endpoint0_service();  //    
+            int_endpoint0_service();        //
         }
         if(ispendflag)
         {
             ispendflag = 0;
             jmp_usercode();
-//              reg_usb_Power = 0;  
-//              return;  
+            //reg_usb_Power = 0;  
+            //return;  
         }
-//        Delay_us(100);
+        //Delay_us(100);
     }
 }
 
 void main()
 {
     UINT8 code *ptcode; 
-    ptcode = 0x7C00-3;   // 7BFD = 7C00-3
+    ptcode = 0x7C00-3;                      // 7BFD = 7C00-3
     if(*ptcode!=0x02)
     {
        isp_patch();
@@ -120,16 +120,16 @@ void main()
     while(1)
     {
         intr_usb = reg_usb_IntrUSB; 
-        if(intr_usb & 0x04)             //reset bit2
+        if(intr_usb & 0x04)                 //reset bit2
         {
-            while(reg_usb_BusRest);     //USB RESET 
+            while(reg_usb_BusRest);         //USB RESET 
             reg_EP0_SevOutPktRdy = 1;
-            if(reg_usb_Power & SET_BIT4)  //high speed mode
+            if(reg_usb_Power & SET_BIT4)    //high speed mode
             {
                 jmp_usercode();
                 //return;
             }
-            else                        //low speed mode
+            else                            //low speed mode
             {
                 isp_patch();
                 //return

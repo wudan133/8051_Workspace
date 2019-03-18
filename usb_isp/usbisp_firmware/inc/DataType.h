@@ -1,14 +1,14 @@
-#ifndef	__DATATYPE_H__
+#ifndef __DATATYPE_H__
 #define __DATATYPE_H__
 
-#define TRUE 	1
-#define FALSE	0
-#define IN 0
-#define OUT 1
-#define true  1
-#define false 0
+#define TRUE    1
+#define FALSE   0
+#define IN      0
+#define OUT     1
+#define true    1
+#define false   0
 #ifndef NULL
-#define NULL 0
+#define NULL    0
 #endif
 
 #define MS185X_DRV_API
@@ -23,31 +23,31 @@
 #define CG7100_FPGA_VERIFY 0   //if real chip please modify to 0
 //#define CG7100_CLK_RESRT_CONFIG_USE_DRIVER_API
 
-typedef unsigned char 	BOOL;
-typedef unsigned char 	bool;
-typedef unsigned char	BYTE;
-typedef unsigned short	WORD;
-typedef unsigned long	DWORD;
+typedef unsigned char   BOOL;
+typedef unsigned char   bool;
+typedef unsigned char   BYTE;
+typedef unsigned short  WORD;
+typedef unsigned long   DWORD;
 
-typedef unsigned char  UINT8;
-typedef unsigned short UINT16;
-typedef unsigned long  UINT32;
+typedef unsigned char   UINT8;
+typedef unsigned short  UINT16;
+typedef unsigned long   UINT32;
 
-typedef signed char  INT8;
-typedef signed short INT16;
-typedef signed long  INT32;
+typedef signed char     INT8;
+typedef signed short    INT16;
+typedef signed long     INT32;
 typedef void  VOID;
 
-#define XBYTE      BYTE   xdata
-#define XWORD    WORD xdata
-#define XDWORD  DWORD xdata
+#define XBYTE           BYTE    xdata
+#define XWORD           WORD    xdata
+#define XDWORD          DWORD   xdata
 
 #ifndef _countof
 #define _countof(ARRAY) (sizeof(ARRAY) / sizeof(ARRAY[0]))
 #endif
 
-#define SWAP(x)   ((((x)&0xFF)<<8)|(((x)>>8)&0xFF))
-#define MSB(x)	  (BYTE)(((x)>>8)&0xff)
+#define SWAP(x) ((((x)&0xFF)<<8)|(((x)>>8)&0xFF))
+#define MSB(x)  (BYTE)(((x)>>8)&0xff)
 
 #define CLEAR_ALL_BIT 0x00;
 #define SET_BIT0 0x01
@@ -119,17 +119,17 @@ typedef void  VOID;
 #define SECOND_CYCLE 1
 #define THIRD_CYCLE 2
 /***************************************************************
-	USB协议，描述符定义
+    USB协议，描述符定义
 ****************************************************************/
-//#define DESCRIPT_LENGTH					    0x1A8
-#define DESCRIPT_LENGTH					    0x19C	  		
+//#define DESCRIPT_LENGTH                   0x1A8
+#define DESCRIPT_LENGTH                     0x19C
 #define USB_DEVICE_DESC_TYPE                0x01
-#define USB_CONFIG_DESC_TYPE   		        0x02
+#define USB_CONFIG_DESC_TYPE                0x02
 #define USB_STRING_DESC_TYPE                0x03
 #define USB_INTERFACE_DESC_TYPE             0x04
 #define USB_ENDPOINT_DESC_TYPE              0x05
-#define USB_QUALIFIER_DESC_TYPE				0x06
-#define	USB_OTHERSPEED_DESC_TYPE			0x07
+#define USB_QUALIFIER_DESC_TYPE             0x06
+#define	USB_OTHERSPEED_DESC_TYPE            0x07
 
 #define USB_REQUEST_GET_STATUS              0x00
 #define USB_REQUEST_CLEAR_FEATURE           0x01
@@ -142,28 +142,28 @@ typedef void  VOID;
 #define USB_REQUEST_GET_INTERFACE           0x0A
 #define USB_REQUEST_SET_INTERFACE           0x0B
 #define USB_REQUEST_SYNC_FRAME              0x0C
-#define USB_REQUEST_GET_MAXLUN				0xFE
-#define USB_REQUEST_BOUL_RESET				0xFF
+#define USB_REQUEST_GET_MAXLUN              0xFE
+#define USB_REQUEST_BOUL_RESET              0xFF
 
 //-----------------------------
-#define	EP0_CMD		0
-#define	EP0_RX		1
-#define	EP0_TX		2
-#define	EP0_IDEL	3
+#define EP0_CMD     0
+#define EP0_RX      1
+#define EP0_TX      2
+#define EP0_IDEL    3
 
 
-#define TEST_MODE		2
-#define ENDP_HALT		0
-#define REMOTE_WAK		1
+#define TEST_MODE       2
+#define ENDP_HALT       0
+#define REMOTE_WAK      1
 
-#define	TEST_J			1
-#define	TEST_K			2
-#define	TEST_PKT		4
-#define TEST_SE0_NAK	3
+#define TEST_J          1
+#define TEST_K          2
+#define TEST_PKT        4
+#define TEST_SE0_NAK    3
 
-#define	DEV_DEFAULT	0
-#define DEV_ADDRESS	1
-#define	DEV_CONFIG	2
+#define DEV_DEFAULT     0
+#define DEV_ADDRESS     1
+#define DEV_CONFIG      2
 
 typedef struct _T_MS_VIDEO_SIZE_
 {

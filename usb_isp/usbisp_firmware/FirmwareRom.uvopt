@@ -89,8 +89,8 @@
         </Book>
       </Books>
       <DebugOpt>
-        <uSim>0</uSim>
-        <uTrg>1</uTrg>
+        <uSim>1</uSim>
+        <uTrg>0</uTrg>
         <sLdApp>1</sLdApp>
         <sGomain>1</sGomain>
         <sRbreak>1</sRbreak>
@@ -108,7 +108,7 @@
         <tRtrace>0</tRtrace>
         <sRSysVw>1</sRSysVw>
         <tRSysVw>1</tRSysVw>
-        <tPdscDbg>1</tPdscDbg>
+        <tPdscDbg>0</tPdscDbg>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
         <nTsel>0</nTsel>
@@ -216,7 +216,7 @@
 
   <Group>
     <GroupName>main</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -228,8 +228,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>25</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>122</TopLine>
+      <CurrentLine>127</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\code\STARTUP.A51</PathWithFileName>
       <FilenameWithoutPath>STARTUP.A51</FilenameWithoutPath>
@@ -261,10 +261,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>44</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>6</CurrentLine>
+      <TopLine>117</TopLine>
+      <CurrentLine>132</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\code\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -277,10 +277,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>126</TopLine>
-      <CurrentLine>141</CurrentLine>
+      <TopLine>267</TopLine>
+      <CurrentLine>295</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\code\usbrequest.c</PathWithFileName>
       <FilenameWithoutPath>usbrequest.c</FilenameWithoutPath>
@@ -295,8 +295,8 @@
       <Focus>0</Focus>
       <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>9</CurrentLine>
+      <TopLine>72</TopLine>
+      <CurrentLine>95</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\code\descript.c</PathWithFileName>
       <FilenameWithoutPath>descript.c</FilenameWithoutPath>
